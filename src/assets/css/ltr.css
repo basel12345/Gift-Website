@@ -1,0 +1,257 @@
+.navbar-brand img{
+  width:200px;
+}
+.footerimage{
+  width: 200px;
+}
+.main_slider_area #home_box_slider ul li .slider_text_box .secand_text {
+    color: #222;
+}
+.done {
+    background: #21ab21;
+    color: #fff;
+    line-height: 25px;
+    padding: 0px 11px;
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.add_card_btn {
+    background: #d91522;
+    color: #fff;
+    line-height: 38px;
+    border: 1px solid #d91522;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .70px;
+    padding: 0px 15px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+    font-family: "Poppins", sans-serif;
+}
+.add_card_btn:hover{
+  color: #d91522;
+  background-color: #fff;
+}
+
+
+/* login page */
+.loginbackground{
+  background-image: url(../img/banner/1.jpg);
+  background-size: cover;
+}
+.loginbackground h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: .60px;
+    padding-bottom: 10px;
+}
+.loginpageout{
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #d91522;
+  padding: 3%;
+  border-radius: 5px;
+}
+.login_form .form-group h4 a{
+    font-size: 14px;
+    color: #d91522;
+    font-weight: normal;
+    display: inline-block;
+    float: right;
+}
+.login_form .form-group h5 a{
+    font-size: 14px;
+    color: #d91522;
+}
+.loginpageout .update_btn{
+  background-color: #d91522;
+  color: #fff;
+}
+.registerbtn{
+  background-color: #d91522;
+  color: #fff;
+}
+.l_supper_widget h4 {
+    color: #d91522;
+}
+.eventbackground{
+  background-image: url("../img/fullwidth-item/event-img.jpg");
+}
+.product_details_text h6 span {
+    color: #d91522;
+}
+.giftstitle{
+  text-align: left;
+  color: #d91522;
+}
+.cart_totals_area h4 {
+    color: #d91522;
+}
+.subs_btn {
+    background: #d91522;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #d91522;
+}
+.subs_btn:hover,.subs_btn:focus{
+  color:#d91522;
+  border: 1px solid #d91522;
+}
+.table thead th {
+    font-size: 15px;
+}
+.myshare{
+  width: 100px;
+}
+.black_top_header .selector:before {
+    width: 0px;
+}
+.checkout_main_area .checkout_prosses .checkout_method .update_btn {
+    margin-top: 28px;
+    padding: 0px 43px;
+    line-height: 46px;
+    border: 2px solid #d91522;
+    color: #fff;
+    background-color: #d91522;
+}
+.checkout_main_area .checkout_prosses .checkout_method .update_btn:hover {
+  background-color: #fff;
+  border: 2px solid #d91522;
+  color: #d91522;
+}
+.eventsbackground{
+  background-image: url("../img/banner/f-add-6.jpg");
+}
+.c_product_item .c_product_text h6 span {
+    color: #d91522;
+}
+.contactusbg{
+  background-image: url("../img/banner/f-add-6.jpg");
+}
+.solid_banner_inner h3 {
+    font-size: 24px;
+    color: #fff;
+}
+.contact_us_form .form-group .update_btn {
+    background-color: #d91522;
+    color: #fff;
+    border-color: 1px solid #d91522;
+}
+.contact_us_form .form-group .update_btn:hover, .contact_us_form .form-group .update_btn:focus{
+    background-color: #fff;
+    color: #d91522;
+    border-color: 2px solid #d91522;
+}
+.contact_details .media .d-flex i {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #d91522;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 48px;
+}
+.aboutcardgift h2{
+  text-align: left;
+}
+.aboutcardgift {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f2f2f2;
+}
+.aboutcardgift img{
+  width: 100%;
+  height: auto;
+}
+.privateevent{
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+.enterpassword{
+  margin-bottom: 30px;
+}
+.aboutusbg{
+  background-image: url("../img/banner/2.jpg");
+}
+.aboutsection {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.aboutsection h2{
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.5rem !important;
+}
+.aboutsection p{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+}
+.aboutsection img{
+  width: 100%;
+  height: auto;
+}
+.startjourny{
+  margin-top: 20px;
+  border-radius: 35px;
+  padding: 1rem 1.5rem ;
+}
+.iconsize .icons{
+  color: #d91522;
+  font-size: 40px;
+  line-height: 1.3;
+}
+.iconsize{
+  margin-bottom: 15px;
+}
+.tetleaboutsec{
+  margin-bottom: 15px;
+}
+.titleiconsec{
+  padding: 5px;
+}
+.jout{
+  padding: 10px;
+}
+.aboutcardgift-2{
+  margin-top: 20px;
+
+  padding: 80px 20px;
+  background: #fafafa;
+}
+.aboutcardgift-2 img{
+  width: 100%;
+}
+.aboutcardgift-2 h2{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.5rem !important;
+}
+.aboutcardgift-2 p{
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #999999;
+}
+.page-previewcss{
+  padding:50px 10px;
+}
