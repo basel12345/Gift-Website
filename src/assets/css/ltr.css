@@ -139,6 +139,8 @@
 }
 .contactusbg{
   background-image: url("../img/banner/f-add-6.jpg");
+  max-width: 91%;
+  max-height: 175px;
 }
 .solid_banner_inner h3 {
     font-size: 24px;
@@ -185,6 +187,8 @@
 }
 .aboutusbg{
   background-image: url("../img/banner/2.jpg");
+  width: 91%;
+  max-height: 175px;
 }
 .aboutsection {
   padding-top: 100px;
