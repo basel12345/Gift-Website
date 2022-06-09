@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
   }
 
   getAboutUsList() {
-    this.api.GET('api/v1/about-us').subscribe((res) => {
+    this.api.GET('api/v1/dashboard/about-us').subscribe((res) => {
       console.log("response", res);
     });
   }

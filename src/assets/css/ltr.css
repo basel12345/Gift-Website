@@ -139,7 +139,7 @@
 }
 .contactusbg{
   background-image: url("../img/banner/f-add-6.jpg");
-  max-width: 91%;
+  max-width: 100%;
   max-height: 175px;
 }
 .solid_banner_inner h3 {
@@ -187,7 +187,7 @@
 }
 .aboutusbg{
   background-image: url("../img/banner/2.jpg");
-  width: 91%;
+  width: 100%;
   max-height: 175px;
 }
 .aboutsection {
