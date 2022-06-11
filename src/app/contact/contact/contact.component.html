@@ -56,12 +56,24 @@
             <form [formGroup]="contactUsForm" (ngSubmit)="submitContact(contactUsForm.value)" class="contact_us_form row" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                 <div class="form-group col-lg-4">
                     <input type="text" class="form-control" id="name" name="name" formControlName="full_name" placeholder="Full Name *" />
+                  <mat-error *ngIf="contactUsForm.controls.full_name.hasError('required') && contactUsForm.controls.full_name.touched">
+                    Name is required
+                  </mat-error>
                 </div>
                 <div class="form-group col-lg-4">
                     <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="Email Address *" />
+                  <mat-error *ngIf="contactUsForm.controls.email.hasError('required') && contactUsForm.controls.email.touched">
+                    Email is required
+                  </mat-error>
+                  <mat-error *ngIf="contactUsForm.controls.email.hasError('email') && contactUsForm.controls.email.touched">
+                    Please enter a valid email address.
+                  </mat-error>
                 </div>
                 <div class="form-group col-lg-4">
                     <input type="text" class="form-control" id="website" name="website" placeholder="Phone" formControlName="phone" />
+                  <mat-error *ngIf="contactUsForm.controls.phone.hasError('required') && contactUsForm.controls.full_name.touched">
+                    Phone is required
+                  </mat-error>
                 </div>
                 <div class="form-group col-lg-12">
                     <textarea class="form-control" name="message" id="message" formControlName="message" rows="1" placeholder="Type Your Message..."></textarea>
