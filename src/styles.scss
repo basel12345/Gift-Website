@@ -1,3 +1,9 @@
 @import "./assets/scss/style.scss";
+@import "./assets/css/responsive.css";
+@import "./assets/css/bootstrap.min.css";
+@import "./assets/scss/variables";
+@import "./assets/scss/predefin";
+@import "./assets/scss/shop";
+@import "./assets/scss/button";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

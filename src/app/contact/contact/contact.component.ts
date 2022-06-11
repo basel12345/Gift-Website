@@ -37,7 +37,7 @@ export class ContactComponent implements OnInit {
     if (form.message) {
       Form_Data.append('message', form.message);
     }
-    this.api.POST('api/v1/contact-us').subscribe(
+    this.api.POST('api/v1/contact-us', Form_Data).subscribe(
       (res) => {
         this.toaster.success(
           `<span class="text-capitalize">${res.body['message']}</span>`

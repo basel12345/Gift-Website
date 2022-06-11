@@ -8,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   constructor(private api: ApisService) {}
-
+  title: string;
+  content: any;
+  image: string;
   ngOnInit(): void {
     this.getAboutUsList();
   }
 
   getAboutUsList() {
-    this.api.GET('api/v1/dashboard/about-us').subscribe((res) => {
-      console.log("response", res);
+    this.api.GET('api/v1/about-us').subscribe((res: any) => {
+      console.log("response", res.body);
+      this.title = res.body.data[0].title;
+      this.content = res.body.data[0].content;
+      this.image = res.body.data[0].image
     });
   }
 }

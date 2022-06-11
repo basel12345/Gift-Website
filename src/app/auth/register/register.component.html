@@ -1,0 +1,81 @@
+<!--================Categories Banner Area =================-->
+<section class="solid_banner_area loginbackground">
+  <div class="container">
+    <div class="solid_banner_inner">
+      <h3>Create account</h3>
+
+    </div>
+  </div>
+</section>
+<!--================End Categories Banner Area =================-->
+<!--================login Area =================-->
+<section class="login_area p_100">
+  <div class="container">
+    <div class="login_inner registerpageout">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="login_title">
+            <h2>create account</h2>
+            <p>Follow the steps below to create your account.</p>
+          </div>
+          <form class="login_form row" [formGroup]="registerForm" (ngSubmit)="register(registerForm.value)">
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="text" formControlName="Name" placeholder="Name">
+              <mat-error *ngIf="registerForm.controls.Name.hasError('required') && registerForm.controls.Name.touched">
+                Name is required
+              </mat-error>
+            </div>
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="email" formControlName="email" placeholder="Email">
+              <mat-error *ngIf="registerForm.controls.email.hasError('required') && registerForm.controls.email.touched">
+                Email is required
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.email.hasError('email') && registerForm.controls.email.touched">
+                Please enter a valid email address.
+              </mat-error>
+            </div>
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="text" formControlName="userName" placeholder="User Name">
+              <mat-error *ngIf="registerForm.controls.userName.hasError('required') && registerForm.controls.userName.touched">
+                User Name is required
+              </mat-error>
+            </div>
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="text" formControlName="phone" placeholder="Phone">
+              <mat-error *ngIf="registerForm.controls.phone.hasError('required') && registerForm.controls.phone.touched">
+               Phone is required
+              </mat-error>
+            </div>
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="password" formControlName="password" placeholder="Password">
+              <mat-error *ngIf="registerForm.controls.password.hasError('minLength') && registerForm.controls.password.touched">
+                password must be at least 6 characters
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.password.hasError('required') && registerForm.controls.password.touched">
+                password is required
+              </mat-error>
+              <h5><a routerLink="/auth/login"> Have an accout?</a></h5>
+
+            </div>
+            <div class="col-lg-6 form-group">
+              <input class="form-control" type="password" formControlName="confirmPassword" placeholder="Re-Password">
+              <mat-error *ngIf="registerForm.hasError('notSame') && registerForm.controls.confirmPassword.touched">
+                your passwords are not match
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.confirmPassword.hasError('minLength') && registerForm.controls.confirmPassword.touched">
+                password must be at least 6 characters
+              </mat-error>
+              <mat-error *ngIf="registerForm.controls.confirmPassword.hasError('required') && registerForm.controls.confirmPassword.touched">
+                password is required
+              </mat-error>
+            </div>
+
+            <div class="col-lg-6 form-group">
+              <button type="submit" value="submit" class="btn subs_btn form-control registerbtn">register now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

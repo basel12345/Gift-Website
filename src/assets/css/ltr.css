@@ -149,12 +149,12 @@
 .contact_us_form .form-group .update_btn {
     background-color: #d91522;
     color: #fff;
-    border-color: 1px solid #d91522;
+    border: 1px solid #d91522;
 }
 .contact_us_form .form-group .update_btn:hover, .contact_us_form .form-group .update_btn:focus{
     background-color: #fff;
     color: #d91522;
-    border-color: 2px solid #d91522;
+    border: 2px solid #d91522;
 }
 .contact_details .media .d-flex i {
     height: 48px;
