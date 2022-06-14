@@ -275,12 +275,13 @@
                 <div class="fillter_l_p_inner">
                   <ul class="fillter_l_p">
                     <li class="active" data-filter="*"><a href="#">All</a></li>
-                    <div class="d-inline-block" *ngFor="let event of data?.events">
-                    <li class="mx-3"><a href="#">{{event.category.name}}</a></li>
+                    <div class="d-inline-block" *ngFor="let event of publicCartegories">
+                    <li class="mx-3" data-filter=`${event}`><a href="#" (click)="getEventsViewed(event)">{{event}}</a></li>
                     </div>
                   </ul>
                   <div  class="row isotope_l_p_inner">
-                    <div *ngFor="let event of data?.events" class="col-lg-4 col-md-4 col-sm-6 woman">
+                    <div *ngFor="let event of viewedEvents" class="col-lg-4 col-md-4 col-sm-6 woman">
+                      {{event.host_address}}
                       <div *ngIf="event.gifts.length > 0" class="l_product_item">
                         <div class="l_p_img">
                           <a href="#">
