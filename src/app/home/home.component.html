@@ -11,7 +11,7 @@
                 <option>All Categories</option>
               </select>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search"/>
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
                 <span class="input-group-btn">
                   <button class="btn btn-secondary" type="button">
                     <i class="icon-magnifier icons"></i>
@@ -21,188 +21,98 @@
             </div>
             <div class="main_slider_area" style="overflow: visible;">
               <div id="home_box_slider" class="rev_slider revslider-initialised tp-simpleresponsive"
-                   data-version="5.3.1.6" style="margin-top: 0px; margin-bottom: 0px; height: 450px;"
-                   data-slideactive="rs-1587">
-                <ul  class="tp-revslider-mainul"
-                    style="visibility: visible; display: block; overflow: hidden; width: 870px; height: 100%; max-height: none; left: 0px;">
-                  <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                data-version="5.3.1.6" style="margin-top: 0px; margin-bottom: 0px; height: 450px;"
+                data-slideactive="rs-1587">
+                <ul class="tp-revslider-mainul"
+                  style="visibility: visible; display: block; overflow: hidden; width: 870px; height: 100%; max-height: none; left: 0px;">
+                  <ng-container>
+                    <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                       data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
                       data-thumb="img/home-slider/slider-1.jpg" data-rotate="0" data-saveperformance="off"
                       data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5=""
                       data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""
                       class="tp-revslider-slidesli active-revslide"
                       style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
-                    <!-- MAIN IMAGE -->
-                    <div class="slotholder"
-                         style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="img/home-slider/select4.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg defaultimg" data-no-retina="">-->
-                      <div class="tp-bgimg defaultimg "
-                           style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('../../assets/img/home-slider/select4.png'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
-                           src="../../assets/img/home-slider/select4.png"></div>
-                    </div>
+                      <!-- MAIN IMAGE -->
+                      <div class="slotholder"
+                        style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="img/home-slider/select4.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg defaultimg" data-no-retina="">-->
+                        <div class="tp-bgimg defaultimg "
+                          [style.backgroundImage]="'url(' + data?.slider[number].image + ')'"
+                          style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat;  background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;">
+                        </div>
+                      </div>
 
-                    <!-- LAYER NR. 1 -->
-                    <div class="slider_text_box first_text">
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 70px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme first_text"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']"
-                                 data-y="['top','top','top','top','top','top']"
-                                 data-voffset="['70','70','70','70','70','70']"
-                                 data-fontsize="['48','48','48','48','48','48']"
-                                 data-lineheight="['56','56','56','56','56','48']"
-                                 data-width="['none','none','none','none','none']" data-height="none"
-                                 data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-832893493"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 56px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 600; font-size: 48px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
-                              Choose your<br> gifts
+                      <!-- LAYER NR. 1 -->
+                      <div class="slider_text_box first_text">
+                        <div class="tp-parallax-wrap"
+                          style="position: absolute; display: block; visibility: visible; left: 60px; top: 70px; z-index: 1;">
+                          <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                            <div class="tp-mask-wrap"
+                              style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <div class="tp-caption tp-resizeme first_text"
+                                data-x="['left','left','left','left','left','left']"
+                                data-hoffset="['60','60','60','60','20','0']"
+                                data-y="['top','top','top','top','top','top']"
+                                data-voffset="['70','70','70','70','70','70']"
+                                data-fontsize="['48','48','48','48','48','48']"
+                                data-lineheight="['56','56','56','56','56','48']"
+                                data-width="['none','none','none','none','none']" data-height="none"
+                                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textalign="['left','left','left','left','left','left']" id="layer-832893493"
+                                style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 56px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 600; font-size: 48px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                                {{data?.slider[number].title}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tp-parallax-wrap"
+                          style="position: absolute; display: block; visibility: visible; left: 60px; top: 190px; z-index: 1;">
+                          <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                            <div class="tp-mask-wrap"
+                              style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['left','left','left','left','left','left']"
+                                data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
+                                data-voffset="['190','190','190','190','190','190']"
+                                data-fontsize="['14','14','14','14','14','14']"
+                                data-lineheight="['24','24','24','24','24']"
+                                data-width="['300','300','300','300','300']" data-height="none" data-whitespace="normal"
+                                data-type="text" data-responsive_offset="on" data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textalign="['left','left','left','left','left','left']" id="layer-699420913"
+                                style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 300px; max-height: none; max-width: 300px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" [innerHTML]="data?.slider[number].content">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tp-parallax-wrap"
+                          style="position: absolute; display: block; visibility: visible; left: 60px; top: 290px; z-index: 1;">
+                          <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                            <div class="tp-mask-wrap"
+                              style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <div class="tp-caption tp-resizeme third_btn"
+                                data-x="['left','left','left','left','left','left']"
+                                data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
+                                data-voffset="['290','290','290','290','290','290']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textalign="['left','left','left','left','left','left']" id="layer-694369178"
+                                style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 13px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                                <a class="checkout_btn" href="#"
+                                  style="transition: none 0s ease 0s; text-align: inherit; line-height: 48px; border-width: 1px; margin: 0px; padding: 0px 40px; letter-spacing: 0px; font-weight: 600; font-size: 14px;">shop
+                                  now</a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </li>
+                  </ng-container>
 
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 190px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme secand_text"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
-                                 data-voffset="['190','190','190','190','190','190']"
-                                 data-fontsize="['14','14','14','14','14','14']"
-                                 data-lineheight="['24','24','24','24','24']"
-                                 data-width="['300','300','300','300','300']" data-height="none"
-                                 data-whitespace="normal" data-type="text" data-responsive_offset="on"
-                                 data-transform_idle="o:1;"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-699420913"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 300px; max-height: none; max-width: 300px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
-                              There is no one who loves to be bread, who looks after it and wants to have it, simply
-                              because it is pain.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 290px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme third_btn"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
-                                 data-voffset="['290','290','290','290','290','290']" data-width="none"
-                                 data-height="none" data-whitespace="nowrap" data-type="text"
-                                 data-responsive_offset="on"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-694369178"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 13px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
-                              <a class="checkout_btn" href="#"
-                                 style="transition: none 0s ease 0s; text-align: inherit; line-height: 48px; border-width: 1px; margin: 0px; padding: 0px 40px; letter-spacing: 0px; font-weight: 600; font-size: 14px;">shop
-                                now</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li data-index="rs-1588" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-                      data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-                      data-thumb="img/home-slider/slider-2.jpg" data-rotate="0" data-saveperformance="off"
-                      data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5=""
-                      data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""
-                      class="tp-revslider-slidesli"
-                      style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0; background-color: rgba(255, 255, 255, 0);">
-                    <!-- MAIN IMAGE -->
-                    <div class="slotholder"
-                         style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="img/home-slider/select1.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg defaultimg" data-no-retina="">-->
-                      <div class="tp-bgimg defaultimg "
-                           style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;img/home-slider/select1.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
-                           src="img/home-slider/select1.png"></div>
-                    </div>
-                    <!-- LAYERS -->
-                    <!-- LAYERS -->
-
-                    <!-- LAYER NR. 1 -->
-                    <div class="slider_text_box first_text">
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: hidden; left: 14px; top: 51px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme first_text"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']"
-                                 data-y="['top','top','top','top','top','top']"
-                                 data-voffset="['70','70','70','70','70','70']"
-                                 data-fontsize="['48','48','48','48','48','48']"
-                                 data-lineheight="['56','56','56','56','56','48']"
-                                 data-width="['none','none','none','none','none']" data-height="none"
-                                 data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-969283697"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 41px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 600; font-size: 35px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 147, 0, 1); transform-origin: 50% 50% 0px;">
-                              Best Winter <br> Collection
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: hidden; left: 14px; top: 138px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme secand_text"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
-                                 data-voffset="['190','190','190','190','190','190']"
-                                 data-fontsize="['14','14','14','14','14','14']"
-                                 data-lineheight="['24','24','24','24','24']"
-                                 data-width="['300','300','300','300','300']" data-height="none"
-                                 data-whitespace="normal" data-type="text" data-responsive_offset="on"
-                                 data-transform_idle="o:1;"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-836059763"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 17px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 10px; white-space: normal; min-height: 0px; min-width: 219px; max-height: none; max-width: 219px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 92.75, 0, 1); transform-origin: 50% 50% 0px;">
-                              There is no one who loves to be bread, who looks after it and wants to have it, simply
-                              because it is pain.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tp-parallax-wrap"
-                           style="position: absolute; display: block; visibility: hidden; left: 14px; top: 211px; z-index: 1;">
-                        <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                          <div class="tp-mask-wrap"
-                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <div class="tp-caption tp-resizeme third_btn"
-                                 data-x="['left','left','left','left','left','left']"
-                                 data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
-                                 data-voffset="['290','290','290','290','290','290']" data-width="none"
-                                 data-height="none" data-whitespace="nowrap" data-type="text"
-                                 data-responsive_offset="on"
-                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                 data-textalign="['left','left','left','left','left','left']" id="layer-208088768"
-                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 19px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 9px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 91, 0, 1); transform-origin: 50% 50% 0px;">
-                              <a class="checkout_btn" href="#"
-                                 style="transition: none 0s ease 0s; text-align: inherit; line-height: 35px; border-width: 1px; margin: 0px; padding: 0px 29px; letter-spacing: 0px; font-weight: 600; font-size: 10px;">shop
-                                now</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
                 </ul>
                 <div class="tp-loader spinner0" style="display: none;">
                   <div class="dot1"></div>
@@ -212,11 +122,13 @@
                   <div class="bounce3"></div>
                 </div>
                 <div class="tp-bannertimer"
-                     style="visibility: hidden; width: 0.028778%; transform: translate3d(0px, 0px, 0px);"></div>
+                  style="visibility: hidden; width: 0.028778%; transform: translate3d(0px, 0px, 0px);"></div>
                 <div class="tp-leftarrow tparrows normal noSwipe"
-                     style="top: 100%; transform: matrix(1, 0, 0, 1, -100, -50); left: 100%; visibility: hidden; opacity: 0;"></div>
+                  style="top: 100%; transform: matrix(1, 0, 0, 1, -100, -50); left: 100%;" (click)="slider('prev')">
+                </div>
                 <div class="tp-rightarrow tparrows normal noSwipe"
-                     style="top: 100%; transform: matrix(1, 0, 0, 1, -50, -50); left: 100%; visibility: hidden; opacity: 0;"></div>
+                  style="top: 100%; transform: matrix(1, 0, 0, 1, -50, -50); left: 100%;" (click)="slider('next')">
+                </div>
               </div>
             </div>
 
@@ -225,26 +137,24 @@
                 <div class="left_promotion">
                   <div class="f_add_item">
                     <div class="f_add_img">
-                      <img class="img-fluid" src="./assets/img/feature-add/img-1.jpg" alt=""/>
+                      <img class="img-fluid" src="./assets/img/feature-add/img-1.jpg" alt="" />
                     </div>
                     <div class="f_add_hover">
                       <div class="sale">Comming</div>
-                      <h4>Aya & Mohamed <br/>Engagement</h4>
-                      <a class="add_btn" href="#">View gifts<i class="arrow_right"></i
-                      ></a>
+                      <h4>Aya & Mohamed <br />Engagement</h4>
+                      <a class="add_btn" href="#">View gifts<i class="arrow_right"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="right_promotion">
                   <div class="f_add_item right_dir">
                     <div class="f_add_img">
-                      <img class="img-fluid" src="./assets/img/feature-add/img-2.jpg" alt=""/>
+                      <img class="img-fluid" src="./assets/img/feature-add/img-2.jpg" alt="" />
                     </div>
                     <div class="f_add_hover">
                       <div class="off">Two days left</div>
-                      <h4>Ramy<br/>Birthday</h4>
-                      <a class="add_btn" href="#">View gifts <i class="arrow_right"></i
-                      ></a>
+                      <h4>Ramy<br />Birthday</h4>
+                      <a class="add_btn" href="#">View gifts <i class="arrow_right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -255,11 +165,11 @@
               <div class="container">
                 <div class="row">
                   <div class="col-sm-4">
-                    <img [src]="data?.about[0]?.image" class="img-responsive"/>
+                    <img [src]="data?.about[0]?.image" class="img-responsive" />
                   </div>
                   <div class="col-sm-8">
                     <h2>{{data?.about[0]?.title}}</h2>
-                   <div [innerHTML]="data?.about[0]?.content" style="font-size: 13px;
+                    <div [innerHTML]="data?.about[0]?.content" style="font-size: 13px;
     line-height: 26px;
     font-family: Poppins, sans-serif;"></div>
                   </div>
@@ -276,15 +186,15 @@
                   <ul class="fillter_l_p">
                     <li class="active" data-filter="*"><a href="#">All</a></li>
                     <div class="d-inline-block" *ngFor="let event of data?.events">
-                    <li class="mx-3"><a href="#">{{event.category.name}}</a></li>
+                      <li class="mx-3"><a href="#">{{event.category.name}}</a></li>
                     </div>
                   </ul>
-                  <div  class="row isotope_l_p_inner">
+                  <div class="row isotope_l_p_inner">
                     <div *ngFor="let event of data?.events" class="col-lg-4 col-md-4 col-sm-6 woman">
                       <div *ngIf="event.gifts.length > 0" class="l_product_item">
                         <div class="l_p_img">
                           <a href="#">
-                            <img class="img-fluid" [src]="event.gifts[0].image" alt=""/>
+                            <img class="img-fluid" [src]="event.gifts[0].image" alt="" />
                             <h5 class="done">Done</h5>
                           </a>
                         </div>
@@ -318,7 +228,7 @@
                 <div class="col-lg-4 col-sm-6">
                   <div class="from_blog_item">
                     <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-4r.jpg" alt=""/>
+                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-4r.jpg" alt="" />
                       <div class="f_blog_text">
                         <h5><i class="fa fa-lock"></i> Birthday</h5>
                         <p>Salma's birthday</p>
@@ -329,11 +239,11 @@
                 <div class="col-lg-4 col-sm-6">
                   <div class="from_blog_item">
                     <a href="#">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-6r.jpg" alt=""/>
+                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-6r.jpg" alt="" />
                       <div class="f_blog_text">
                         <h5><i class="fa fa-lock"></i> Graduation</h5>
                         <div class="hiddenpass">
-                          <input class="form-control" type="password" placeholder="Password"/>
+                          <input class="form-control" type="password" placeholder="Password" />
                         </div>
                         <p>Finally, I became an engineer</p>
                       </div>
@@ -343,7 +253,7 @@
                 <div class="col-lg-4 col-sm-6">
                   <div class="from_blog_item">
                     <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-5r.jpg" alt=""/>
+                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-5r.jpg" alt="" />
                       <div class="f_blog_text">
                         <h5><i class="fa fa-lock"></i> New baby</h5>
                         <p>Malek is here</p>
@@ -373,7 +283,7 @@
               </ul>
             </aside>
             <aside class="l_widget l_supper_widget">
-              <img class="img-fluid" src="./assets/img/banner1.jpg" alt=""/>
+              <img class="img-fluid" src="./assets/img/banner1.jpg" alt="" />
               <h4>All the gifts you want</h4>
             </aside>
             <aside class="l_widget l_feature_widget">
@@ -383,10 +293,8 @@
                     <h3>Completed gifts</h3>
                   </div>
                   <div class="float-md-right">
-                    <a href="#" class="vc_goUp"><i class="arrow_carrot-left"></i
-                    ></a>
-                    <a href="#" class="vc_goDown"><i class="arrow_carrot-right"></i
-                    ></a>
+                    <a href="#" class="vc_goUp"><i class="arrow_carrot-left"></i></a>
+                    <a href="#" class="vc_goDown"><i class="arrow_carrot-right"></i></a>
                   </div>
                 </div>
                 <ul class="verticalCarouselGroup vc_list">
@@ -394,7 +302,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -409,7 +317,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-2.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-2.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -424,7 +332,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -439,7 +347,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -454,7 +362,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -468,7 +376,7 @@
                   <li>
                     <div class="media">
                       <div class="d-flex">
-                        <img src="./assets/img/product/featured-product/f-p-2.jpg" alt=""/>
+                        <img src="./assets/img/product/featured-product/f-p-2.jpg" alt="" />
                       </div>
                       <div class="media-body">
                         <a href="#">
@@ -482,7 +390,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -497,7 +405,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt=""/>
+                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt="" />
                         </a>
                       </div>
                       <div class="media-body">
@@ -515,7 +423,7 @@
               <h3>newsletter</h3>
               <p>Sign up for our Newsletter !</p>
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="yourmail@domain.com" aria-label="Search for..."/>
+                <input type="email" class="form-control" placeholder="yourmail@domain.com" aria-label="Search for..." />
                 <span class="input-group-btn">
                   <button class="btn btn-secondary subs_btn" type="button">
                     Subscribe
@@ -542,28 +450,28 @@
           <div class="col-lg-3">
             <div class="world_service_item">
               <h4>
-                <img src="./assets/img/icon/world-icon-1.png" alt=""/>Special Service
+                <img src="./assets/img/icon/world-icon-1.png" alt="" />Special Service
               </h4>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="world_service_item">
               <h4>
-                <img src="./assets/img/icon/world-icon-2.png" alt=""/>247 Help Center
+                <img src="./assets/img/icon/world-icon-2.png" alt="" />247 Help Center
               </h4>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="world_service_item">
               <h4>
-                <img src="./assets/img/icon/world-icon-3.png" alt=""/>Safe Payment
+                <img src="./assets/img/icon/world-icon-3.png" alt="" />Safe Payment
               </h4>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="world_service_item">
               <h4>
-                <img src="./assets/img/icon/world-icon-4.png" alt=""/>Home Shopping
+                <img src="./assets/img/icon/world-icon-4.png" alt="" />Home Shopping
               </h4>
             </div>
           </div>
