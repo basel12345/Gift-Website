@@ -34,6 +34,15 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  scroll(type: string) {
+      const completed = document.getElementById('completed');
+      completed.scroll({
+        top: type === 'bottom' ? completed.scrollHeight : 0, 
+        left: 0,
+        behavior: 'smooth' 
+      });
+  }
+
   slider(type: string) {
     this.content = true;
     if (type === 'next') {
