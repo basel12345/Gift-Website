@@ -25,7 +25,7 @@ publicCartegories = [];
       this.data = res.body.data;
      this.viewedEvents = this.data.events;
      this.getEventsTypes();
-     this.publicCartegories = [...new Set( this.publicEvents?.map(res => {return res.category.name}))];
+     this.publicCartegories = [...new Set( this.data.categories?.map(res => {return res.name.toLowerCase()}))];
       }
     });
   }
@@ -35,8 +35,7 @@ publicCartegories = [];
   }
 
   getEventsViewed(name: string) {
-   this.viewedEvents = this.publicEvents.filter( res => res.category.name === name)
-    console.log(this.viewedEvents, 'view')
+   name === 'all' ? this.viewedEvents= this.publicEvents : this.viewedEvents = this.publicEvents.filter( res => res.category.name === name)
     return false
   }
 }

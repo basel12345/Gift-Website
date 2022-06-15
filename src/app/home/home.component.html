@@ -274,14 +274,13 @@
                 </div>
                 <div class="fillter_l_p_inner">
                   <ul class="fillter_l_p">
-                    <li class="active" data-filter="*"><a href="#">All</a></li>
+                    <li class="active" data-filter="*"><a href="#" (click)="getEventsViewed('all')">All</a></li>
                     <div class="d-inline-block" *ngFor="let event of publicCartegories">
                     <li class="mx-3" data-filter=`${event}`><a href="#" (click)="getEventsViewed(event)">{{event}}</a></li>
                     </div>
                   </ul>
                   <div  class="row isotope_l_p_inner">
                     <div *ngFor="let event of viewedEvents" class="col-lg-4 col-md-4 col-sm-6 woman">
-                      {{event.host_address}}
                       <div *ngIf="event.gifts.length > 0" class="l_product_item">
                         <div class="l_p_img">
                           <a href="#">
@@ -315,39 +314,14 @@
               <p class="enterpassword">
                 You should enter password to unlock this event
               </p>
-              <div class="row">
+              <div class="row" *ngFor="let event of privateEvents">
                 <div class="col-lg-4 col-sm-6">
                   <div class="from_blog_item">
                     <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-4r.jpg" alt=""/>
+                      <img class="img-fluid" [src]="event.image" alt=""/>
                       <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> Birthday</h5>
-                        <p>Salma's birthday</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="from_blog_item">
-                    <a href="#">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-6r.jpg" alt=""/>
-                      <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> Graduation</h5>
-                        <div class="hiddenpass">
-                          <input class="form-control" type="password" placeholder="Password"/>
-                        </div>
-                        <p>Finally, I became an engineer</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="from_blog_item">
-                    <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-5r.jpg" alt=""/>
-                      <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> New baby</h5>
-                        <p>Malek is here</p>
+                        <h5><i class="fa fa-lock"></i> {{event.category.name}}</h5>
+                        <p>{{event.name}}</p>
                       </div>
                     </a>
                   </div>
@@ -356,6 +330,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-3 float-md-right">
           <div class="left_sidebar_area">
             <aside class="l_widget l_categories_widget">
@@ -391,81 +366,6 @@
                   </div>
                 </div>
                 <ul class="verticalCarouselGroup vc_list">
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt=""/>
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Oxford Shirt</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-2.jpg" alt=""/>
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Puffer Jacket</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt=""/>
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Leather Bag</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt=""/>
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Casual Shoes</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt=""/>
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Oxford Shirt</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
                   <li>
                     <div class="media">
                       <div class="d-flex">
