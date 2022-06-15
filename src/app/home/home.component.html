@@ -49,8 +49,10 @@
                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 70px; z-index: 1;">
                           <div class="tp-loop-wrap" style="position:absolute;display:block;;">
                             <div class="tp-mask-wrap"
+                              [ngClass]="data?.slider[number] ? 'animate__animated animate__delay-.5s animate__fadeInDown' : null"
                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
                               <div class="tp-caption tp-resizeme first_text"
+                                [ngClass]="content ? 'animate__animated animate__delay-.5s animate__fadeInDown' : null"
                                 data-x="['left','left','left','left','left','left']"
                                 data-hoffset="['60','60','60','60','20','0']"
                                 data-y="['top','top','top','top','top','top']"
@@ -71,9 +73,11 @@
                         <div class="tp-parallax-wrap"
                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 190px; z-index: 1;">
                           <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                            <div class="tp-mask-wrap"
+                            <div class="tp-mask-wrap animate__animated animate__delay-.5s animate__fadeInUp"
+                              [ngClass]="data?.slider[number] ? 'animate__animated animate__delay-.5s animate__fadeInUp' : null"
                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
                               <div class="tp-caption tp-resizeme secand_text"
+                                [ngClass]="content ? 'animate__animated animate__delay-.5s animate__fadeInUp' : null"
                                 data-x="['left','left','left','left','left','left']"
                                 data-hoffset="['60','60','60','60','20','0']" data-y="['top','top','top','top']"
                                 data-voffset="['190','190','190','190','190','190']"
@@ -83,7 +87,8 @@
                                 data-type="text" data-responsive_offset="on" data-transform_idle="o:1;"
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                                 data-textalign="['left','left','left','left','left','left']" id="layer-699420913"
-                                style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 300px; max-height: none; max-width: 300px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" [innerHTML]="data?.slider[number].content">
+                                style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 300px; max-height: none; max-width: 300px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"
+                                [innerHTML]="data?.slider[number].content">
                               </div>
                             </div>
                           </div>
@@ -92,7 +97,8 @@
                         <div class="tp-parallax-wrap"
                           style="position: absolute; display: block; visibility: visible; left: 60px; top: 290px; z-index: 1;">
                           <div class="tp-loop-wrap" style="position:absolute;display:block;;">
-                            <div class="tp-mask-wrap"
+                            <div class="tp-mask-wrap animate__animated animate__delay-.5s animate__fadeInUp"
+                              [ngClass]="data?.slider[number] ? 'animate__animated animate__delay-.5s animate__fadeInUp' : null"
                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
                               <div class="tp-caption tp-resizeme third_btn"
                                 data-x="['left','left','left','left','left','left']"
@@ -101,6 +107,7 @@
                                 data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                                 data-textalign="['left','left','left','left','left','left']" id="layer-694369178"
+                                [ngClass]="content ? 'animate__animated animate__delay-.5s animate__fadeInUp' : null"
                                 style="visibility: inherit; transition: none 0s ease 0s; text-align: left; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 13px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
                                 <a class="checkout_btn" href="#"
                                   style="transition: none 0s ease 0s; text-align: inherit; line-height: 48px; border-width: 1px; margin: 0px; padding: 0px 40px; letter-spacing: 0px; font-weight: 600; font-size: 14px;">shop
@@ -184,13 +191,14 @@
                 </div>
                 <div class="fillter_l_p_inner">
                   <ul class="fillter_l_p">
-                    <li class="active" data-filter="*"><a href="#">All</a></li>
-                    <div class="d-inline-block" *ngFor="let event of data?.events">
-                      <li class="mx-3"><a href="#">{{event.category.name}}</a></li>
+                    <li class="active" data-filter="*"><a href="#" (click)="getEventsViewed('all')">All</a></li>
+                    <div class="d-inline-block" *ngFor="let event of publicCartegories">
+                      <li class="mx-3" data-filter=`${event}`><a href="#" (click)="getEventsViewed(event)">{{event}}</a>
+                      </li>
                     </div>
                   </ul>
                   <div class="row isotope_l_p_inner">
-                    <div *ngFor="let event of data?.events" class="col-lg-4 col-md-4 col-sm-6 woman">
+                    <div *ngFor="let event of viewedEvents" class="col-lg-4 col-md-4 col-sm-6 woman">
                       <div *ngIf="event.gifts.length > 0" class="l_product_item">
                         <div class="l_p_img">
                           <a href="#">
@@ -224,39 +232,14 @@
               <p class="enterpassword">
                 You should enter password to unlock this event
               </p>
-              <div class="row">
+              <div class="row" *ngFor="let event of privateEvents">
                 <div class="col-lg-4 col-sm-6">
                   <div class="from_blog_item">
                     <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-4r.jpg" alt="" />
+                      <img class="img-fluid" [src]="event.image" alt="" />
                       <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> Birthday</h5>
-                        <p>Salma's birthday</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="from_blog_item">
-                    <a href="#">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-6r.jpg" alt="" />
-                      <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> Graduation</h5>
-                        <div class="hiddenpass">
-                          <input class="form-control" type="password" placeholder="Password" />
-                        </div>
-                        <p>Finally, I became an engineer</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="from_blog_item">
-                    <a href="event-details.php">
-                      <img class="img-fluid" src="./assets/img/blog/from-blog/f-blog-5r.jpg" alt="" />
-                      <div class="f_blog_text">
-                        <h5><i class="fa fa-lock"></i> New baby</h5>
-                        <p>Malek is here</p>
+                        <h5><i class="fa fa-lock"></i> {{event.category.name}}</h5>
+                        <p>{{event.name}}</p>
                       </div>
                     </a>
                   </div>
@@ -265,6 +248,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-3 float-md-right">
           <div class="left_sidebar_area">
             <aside class="l_widget l_categories_widget">
@@ -298,81 +282,6 @@
                   </div>
                 </div>
                 <ul class="verticalCarouselGroup vc_list">
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Oxford Shirt</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-2.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Puffer Jacket</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-3.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Leather Bag</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-4.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Casual Shoes</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="d-flex">
-                        <a href="#">
-                          <img src="./assets/img/product/featured-product/f-p-1.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#">
-                          <h4>Oxford Shirt</h4>
-                          <h5>$45.05</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
                   <li>
                     <div class="media">
                       <div class="d-flex">
