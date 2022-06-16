@@ -4,7 +4,7 @@
     margin-top: 30px;
 }
 .feature_inner{
-    
+
 }
 .f_add_item{
     position: relative;
@@ -45,7 +45,7 @@
         padding: 0px 10px;
         line-height: 25px;
         font-size: 14px;
-    }    
+    }
     &.right_dir{
         .f_add_hover{
             left: auto;
@@ -70,7 +70,7 @@
 .promotion_area{
     margin-top: 20px;
     .feature_inner{
-       
+
     }
     .left_promotion{
         flex: 0 0 55.8%;
@@ -177,7 +177,7 @@
 /* Full Width Feature Area css
 ============================================================================================ */
 .fullwidth_feature_area{
-    
+
 }
 .full_feature_item{
     overflow: hidden;
@@ -220,7 +220,7 @@
         .item{
             text-align: center;
             img{
-                width: auto; 
+                width: auto;
                 display: inline-block;
             }
         }
@@ -278,7 +278,7 @@
 /* Home Parallax Area css
 ============================================================================================ */
 .full_page_area{
-    
+
 }
 .paper_inner{
     margin-bottom: 200px;
@@ -396,10 +396,7 @@
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    display: flex;
     .bootstrap-select{
-        flex: 0 0 25%;
-        max-width: 25%;
         width: 100% !important;
         text-align: center;
         .dropdown-toggle{
@@ -419,14 +416,14 @@
                 color: #000;
                 text-transform: uppercase;
                 text-align: center !important;
-            } 
+            }
             &:after{
                 content: "\33";
                 font-family: 'ElegantIcons';
                 font-size: 14px;
                 color: #000;
                 margin: 0px;
-                width: auto; 
+                width: auto;
                 height: auto;
                 position: absolute;
                 right: 22px;
@@ -434,7 +431,7 @@
                 transform: translateY(-50%);
                 border: none;
             }
-        } 
+        }
         .dropdown-menu {
             padding: 0px;
             border-radius: 0px;
@@ -486,7 +483,7 @@
                 cursor: pointer;
             }
         }
-    }    
+    }
 }
 /* End World Servie Area css
 ============================================================================================ */

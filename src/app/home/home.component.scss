@@ -1,13 +1,35 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/predefin";
-@import "../../assets/vendors/bootstrap-selector/css/bootstrap-select.min.css";
 @import "../../assets/css/ltr.css";
 @import "../../assets/css/responsive.css";
-@import "../../assets/css/bootstrap.min.css";
-@import "../../assets/scss/button";
 @import "../../assets/scss/blog";
 @import "../../assets/scss/shop";
-
+.subs_btn_1{
+  background: #d91522;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #d91522;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  border-radius: 0px;
+  padding: 0px 35px;
+  line-height: 48px;
+  transition: all 400ms linear 0s;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.subs_btn_1:hover {
+  background-color: transparent;
+  color: #d91522;
+}
+.selectpicker{
+  @media (max-width: 767px) {
+min-width: 100% !important;
+  }
+}
 
 
 
