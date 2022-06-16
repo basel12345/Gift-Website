@@ -20,9 +20,9 @@
               </div>
             </div>
             <div class="main_slider_area" style="overflow: visible;">
-              <div id="home_box_slider" (mouseenter) ="showArrows('show')" (mouseleave) ="showArrows('hide')" class="rev_slider revslider-initialised tp-simpleresponsive"
-                data-version="5.3.1.6" style="margin-top: 0px; margin-bottom: 0px; height: 450px;"
-                data-slideactive="rs-1587">
+              <div id="home_box_slider" (mouseenter)="showArrows('show')" (mouseleave)="showArrows('hide')"
+                class="rev_slider revslider-initialised tp-simpleresponsive" data-version="5.3.1.6"
+                style="margin-top: 0px; margin-bottom: 0px; height: 450px;" data-slideactive="rs-1587">
                 <ul class="tp-revslider-mainul"
                   style="visibility: visible; display: block; overflow: hidden; width: 870px; height: 100%; max-height: none; left: 0px;">
                   <ng-container>
@@ -130,10 +130,12 @@
                 </div>
                 <div class="tp-bannertimer"
                   style="visibility: hidden; width: 0.028778%; transform: translate3d(0px, 0px, 0px);"></div>
-                <div class="tp-leftarrow tparrows normal noSwipe" [style]="arrows ? 'visibility: visible' : 'visibility: hidden'"
+                <div class="tp-leftarrow tparrows normal noSwipe"
+                  [style]="arrows ? 'visibility: visible' : 'visibility: hidden'"
                   style="top: 100%; transform: matrix(1, 0, 0, 1, -100, -50); left: 100%;" (click)="slider('prev')">
                 </div>
-                <div class="tp-rightarrow tparrows normal noSwipe" [style]="arrows ? 'visibility: visible' : 'visibility: hidden'"
+                <div class="tp-rightarrow tparrows normal noSwipe"
+                  [style]="arrows ? 'visibility: visible' : 'visibility: hidden'"
                   style="top: 100%; transform: matrix(1, 0, 0, 1, -50, -50); left: 100%;" (click)="slider('next')">
                 </div>
               </div>
@@ -144,7 +146,8 @@
                 <div class="left_promotion">
                   <div class="f_add_item">
                     <div class="f_add_img">
-                      <img class="img-fluid" src="./assets/img/feature-add/img-1.jpg" alt="" />
+                      <img class="img-fluid" style="height: 227px;width: 448px;" [src]="data?.gift_ads[0].image"
+                        alt="" />
                     </div>
                     <div class="f_add_hover">
                       <div class="sale">Comming</div>
@@ -156,7 +159,8 @@
                 <div class="right_promotion">
                   <div class="f_add_item right_dir">
                     <div class="f_add_img">
-                      <img class="img-fluid" src="./assets/img/feature-add/img-2.jpg" alt="" />
+                      <img class="img-fluid" style="height: 227px;width: 100%;" [src]="data?.gift_ads[1].image"
+                        alt="" />
                     </div>
                     <div class="f_add_hover">
                       <div class="off">Two days left</div>
@@ -199,10 +203,10 @@
                   </ul>
                   <div class="row isotope_l_p_inner">
                     <div *ngFor="let event of viewedEvents" class="col-lg-4 col-md-4 col-sm-6 woman">
-                      <div  class="l_product_item">
-                        <div class="l_p_img" style="height: 305px" >
+                      <div class="l_product_item">
+                        <div class="l_p_img" style="height: 305px">
                           <a href="#">
-                            <img class="img-fluid w-100 h-100" [src]="event.image"  alt="" />
+                            <img class="img-fluid w-100 h-100" [src]="event.image" alt="" />
                             <h5 class="done">Done</h5>
                           </a>
                         </div>
@@ -277,12 +281,13 @@
                     <h3>Completed gifts</h3>
                   </div>
                   <div class="float-md-right">
-                    <a  (click)="scroll('top')" class="vc_goUp"><i class="arrow_carrot-left"></i></a>
+                    <a (click)="scroll('top')" class="vc_goUp"><i class="arrow_carrot-left"></i></a>
                     <a class="vc_goDown" (click)="scroll('bottom')"><i class="arrow_carrot-right"></i></a>
                   </div>
                 </div>
-                <ul *ngFor="let gift of data?.completed_gifts" id="completed" class="verticalCarouselGroup vc_list" style="height: 300px;overflow-y: hidden;">
-                  <li>
+                <ul *ngFor="let gift of data?.completed_gifts; let i = index" class="verticalCarouselGroup vc_list"
+                  style="height: 300px;overflow-y: hidden;">
+                  <li [id]="'completed' + i">
                     <div class="media">
                       <div class="d-flex">
                         <img [src]="gift.image" alt="" />

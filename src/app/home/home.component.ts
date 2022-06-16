@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   viewedEvents: any;
   publicCartegories = [];
   content: boolean = false;
-  arrows:boolean;
+  arrows: boolean;
+  index: number = 0;
   constructor(private api: ApisService) {
   }
 
@@ -25,26 +26,25 @@ export class HomeComponent implements OnInit {
   }
   getGiftList() {
     this.api.GET('api/v1/home').subscribe((res: any) => {
-      console.log("response", res.body);
       if (res.body.success === true) {
         this.data = res.body.data
-        console.log(this.data)
+        console.log(this.data);
+
         this.getEventsTypes();
         this.viewedEvents = this.publicGifts;
-        console.log(this.viewedEvents, 'kkk')
         this.publicCartegories = [...new Set(this.data.categories?.map(res => { return res.name.toLowerCase() }))];
-        console.log(this.publicEvents)
       };
     });
   }
 
   scroll(type: string) {
-      const completed = document.getElementById('completed');
-      completed.scroll({
-        top: type === 'bottom' ? completed.scrollHeight : 0,
-        left: 0,
+    this.index = type === 'bottom' ? this.index + 1 : this.index - 1
+    const completed = document.getElementById('completed' + this.index);
+    if (this.index >= 0 && completed) {
+      completed.scrollIntoView({
         behavior: 'smooth'
       });
+    }
   }
 
   slider(type: string) {
@@ -61,23 +61,17 @@ export class HomeComponent implements OnInit {
   getEventsTypes(): any {
     this.publicEvents = this.data?.events?.filter(res => res.type === 'public' && res.gifts.length !== 0);
     this.privateEvents = this.data?.events?.filter(res => res.type === 'private');
-     this.publicEvents?.map(res => this.publicGifts = [...res.gifts]);
+    this.publicEvents?.map(res => this.publicGifts = [...res.gifts]);
   }
 
   getEventsViewed(name: string) {
-    let filteredEvents ;
-    let filteredGifts;
-    if (name === 'all') { this.viewedEvents = this.publicGifts }   else {
-      filteredEvents = this.publicEvents.filter(res => res.category.name === name)
-      filteredEvents.map(res => {
-        filteredGifts = [...res.gifts]
-      })
-      this.viewedEvents = filteredGifts
+    if (name === 'all') { this.viewedEvents = this.publicGifts } else {
+      this.viewedEvents = this.publicEvents.filter(res => res.category.name === name).map(res => res.gifts)[0];
     }
     return false
   }
 
   showArrows(event: string) {
-    event === 'show' ? this.arrows = true :  setTimeout(() => this.arrows = false, 200);
+    event === 'show' ? this.arrows = true : setTimeout(() => this.arrows = false, 200);
   }
 }
