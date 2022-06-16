@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
     }
     this.api.POST('api/v1/contact-us', Form_Data).subscribe(
       (res) => {
+        this.contactUsForm.reset();        
         this.toaster.success(
           `<span class="text-capitalize">${res.body['message']}</span>`
         );

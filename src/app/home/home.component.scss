@@ -4,7 +4,8 @@
 @import "../../assets/css/responsive.css";
 @import "../../assets/scss/blog";
 @import "../../assets/scss/shop";
-.subs_btn_1{
+
+.subs_btn_1 {
   background: #d91522;
   text-transform: uppercase;
   color: #fff;
@@ -21,16 +22,29 @@
   box-shadow: none !important;
   cursor: pointer;
 }
+
 .subs_btn_1:hover {
   background-color: transparent;
   color: #d91522;
 }
-.selectpicker{
+
+.selectpicker {
   @media (max-width: 767px) {
-min-width: 100% !important;
+    min-width: 100% !important;
   }
 }
 
+button {
+  border: none;
 
+  @media (max-width: 767px) {
+    min-width: 100% !important;
+    padding: 10px;
+  }
+}
 
-
+.dropdown {
+  @media (max-width: 767px) {
+    min-width: 100% !important;
+  }
+}

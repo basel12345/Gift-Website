@@ -4,16 +4,22 @@
       <div class="row row_disable">
         <div class="col-lg-9 float-md-right">
           <div class="sidebar_main_content_area">
-            <div class="advanced_search_area">
-              <select class="selectpicker">
-                <option>Search in events</option>
-                <option>All Categories</option>
-                <option>All Categories</option>
-              </select>
+            <div class="advanced_search_area" style="position: relative;">
+              <button (click)="dropdown = !dropdown" style="width: 25%; border: none; font-size: 21px;">{{categoryName}}</button>
+              <ul *ngIf="dropdown" style="position: absolute;top: 57px;background: white;z-index: 1111;width: 25%;" class="dropdown">
+                <li
+                  style="padding: 0px 10px;font-size: 16px;color: #666666;line-height: 35px;font-size: 18px;cursor: pointer;"
+                  (click)="getCategories(0, 'All')"><a>All</a></li>
+                <li
+                  style="padding: 0px 10px;font-size: 16px;color: #666666;line-height: 35px;font-size: 18px;cursor: pointer;"
+                  *ngFor="let event of data?.categories" [value]="event.id" (click)="getCategories(event.id, event.name)">
+                  <a>{{event.name}}</a></li>
+              </ul>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+                <input type="text" class="form-control" name="search" [(ngModel)]="seacrh" placeholder="Search"
+                  aria-label="Search" />
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">
+                  <button class="btn btn-secondary" (click)="filter()" type="button">
                     <i class="icon-magnifier icons"></i>
                   </button>
                 </span>
@@ -207,7 +213,7 @@
                         <div class="l_p_img" style="height: 305px">
                           <a href="#">
                             <img class="img-fluid w-100 h-100" [src]="event.image" alt="" />
-                            <h5 class="done">Done</h5>
+                            <h5 *ngIf="event.status == 1" class="done">Done</h5>
                           </a>
                         </div>
                         <div class="l_p_text">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ApisService } from "../shared/services/apis.service";
 
 @Component({
@@ -8,6 +8,7 @@ import { ApisService } from "../shared/services/apis.service";
 })
 export class HomeComponent implements OnInit {
   data: any;
+  seacrh: string;
   number: number = 0;
   publicEvents = [];
   publicGifts = [];
@@ -17,6 +18,9 @@ export class HomeComponent implements OnInit {
   content: boolean = false;
   arrows: boolean;
   index: number = 0;
+  dropdown: boolean = false;
+  categories: number;
+  categoryName: string = "All";
   constructor(private api: ApisService) {
   }
 
@@ -24,12 +28,34 @@ export class HomeComponent implements OnInit {
     this.getGiftList();
     this.getEventsTypes();
   }
+
+  @HostListener('document:click', ['$event'])
+  handleClick(event: any) {
+    if (event?.path[0].type !== 'submit') this.dropdown = false;
+  }
+
+  getCategories(id: number, name: string) {
+    this.categories = id;
+    this.categoryName = name;
+  }
+
+  filter() {
+    let queryObj = {};
+    if (this.categories) queryObj['category_id'] = this.categories;
+    if (this.seacrh) queryObj['key'] = this.seacrh;
+    this.api.GET('api/v1/home', queryObj).subscribe((res: any) => {
+      if (res.body.success === true) {
+        this.data = res.body.data
+        this.publicEvents = this.data?.events?.filter(res => res.type === 'public');
+        this.viewedEvents = this.publicEvents?.map(res => res.gifts)[0];
+      };
+    });
+  }
+
   getGiftList() {
     this.api.GET('api/v1/home').subscribe((res: any) => {
       if (res.body.success === true) {
         this.data = res.body.data
-        console.log(this.data);
-
         this.getEventsTypes();
         this.viewedEvents = this.publicGifts;
         this.publicCartegories = [...new Set(this.data.categories?.map(res => { return res.name.toLowerCase() }))];
