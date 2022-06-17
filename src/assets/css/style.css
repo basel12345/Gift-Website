@@ -1638,8 +1638,8 @@ i:before {
 /* Solid Banner Area css
 ============================================================================================ */
 .solid_banner_area {
-  background: #f3f3f3;
   text-align: center;
+  color: white;
 }
 
 .solid_banner_inner {
@@ -1649,7 +1649,7 @@ i:before {
 .solid_banner_inner h3 {
   font-size: 24px;
   text-transform: uppercase;
-  color: #000;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: .60px;
