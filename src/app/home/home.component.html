@@ -57,7 +57,7 @@
                             <div class="tp-mask-wrap"
                               [ngClass]="data?.slider[number] ? 'animate__animated animate__delay-.5s animate__fadeInDown' : null"
                               style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
-                              <div class="tp-caption tp-resizeme first_text"
+                              <div  class="tp-caption tp-resizeme first_text"
                                 [ngClass]="content ? 'animate__animated animate__delay-.5s animate__fadeInDown' : null"
                                 data-x="['left','left','left','left','left','left']"
                                 data-hoffset="['60','60','60','60','20','0']"
@@ -185,7 +185,10 @@
                     <img [src]="data?.about[0]?.image" class="img-responsive" />
                   </div>
                   <div class="col-sm-8">
-                    <h2>{{data?.about[0]?.title}}</h2>
+                    <h2 style="font-size: 2rem;
+                    font-weight: 500 !important;
+                    font-family: inherit;
+                    line-height: 1.2;">{{data?.about[0]?.title}}</h2>
                     <div [innerHTML]="data?.about[0]?.content" style="font-size: 13px;
     line-height: 26px;
     font-family: Poppins, sans-serif;"></div>
@@ -227,8 +230,8 @@
                             </li>
                             <!-- <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li> -->
                           </ul>
-                          <h4>{{event.name}}</h4>
-                          <h5>${{event.price}}</h5>
+                          <h4 class="mb-0">{{event.name}}</h4>
+                          <h5 class="mb-3">${{event.price}}</h5>
                         </div>
                       </div>
                     </div>
@@ -238,8 +241,11 @@
             </section>
 
             <div class="home_sidebar_blog">
-              <h3 class="single_title privateevent">Private events</h3>
-              <p class="enterpassword">
+              <h3 class="single_title privateevent" style="font-family: Poppins, sans-serif;
+              font-weight: 600;
+              color: #000;
+              font-size: 18px;">Private events</h3>
+              <p class="enterpassword mb-4">
                 You should enter password to unlock this event
               </p>
               <div class="row" *ngFor="let event of privateEvents">
@@ -262,7 +268,7 @@
         <div class="col-lg-3 float-md-right">
           <div class="left_sidebar_area">
             <aside class="l_widget l_categories_widget">
-              <div class="l_title">
+              <div class="l_title" style="max-height: 65px">
                 <h3>All events</h3>
               </div>
               <ul>
@@ -314,7 +320,7 @@
               <p>Sign up for our Newsletter !</p>
               <div class="input-group">
                 <input type="email" class="form-control" placeholder="yourmail@domain.com" aria-label="Search for..." />
-                <span class="input-group-btn">
+                <span class="input-group-btn mx-auto" style="max-width: 166px">
                   <button class="btn btn-secondary subs_btn_1" type="button">
                     Subscribe
                   </button>

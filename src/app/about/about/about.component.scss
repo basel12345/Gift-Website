@@ -1,11 +1,11 @@
-@import "../../../assets/scss/variables";
-@import "../../../assets/scss/predefin";
-@import "../../../assets/css/style.css";
-@import "../../../assets/css/responsive.css";
-@import "../../../assets/css/ltr.css";
-@import "../../../assets/css/bootstrap.min.css";
-@import "../../../assets/css/font-awesome.min.css";
-@import "../../../assets/scss/feature";
 
+@import "../../../assets/css/ltr.css";
+h5 {
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
 
 
