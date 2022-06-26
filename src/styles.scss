@@ -1,7 +1,29 @@
 @import "./assets/scss/style.scss";
-
 @import "~animate.css/animate.min";
 @import '~ngx-toastr/toastr';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.registerbtn {
+  background: #d91522;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #d91522;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  border-radius: 0px;
+  padding: 0px 35px;
+  line-height: 48px;
+  transition: all 400ms linear 0s;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.registerbtn:hover {
+  background-color: transparent;
+  color: #d91522;
+}
+

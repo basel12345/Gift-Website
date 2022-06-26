@@ -54,6 +54,14 @@
               <mat-error *ngIf="registerForm.controls.password.hasError('required') && registerForm.controls.password.touched">
                 password is required
               </mat-error>
+              <mat-form-field class="w-100 mt-3">
+                <mat-label>Role</mat-label>
+                <mat-select  formControlName="role" required>
+                  <mat-option *ngFor="let role of roles" [value]="role.value">
+                    {{role.name}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
               <h5><a routerLink="/auth/login"> Have an accout?</a></h5>
 
             </div>

@@ -1,4 +1,4 @@
-<section class="login_area p_100">
+<section class="login_area p_100" style="overflow: hidden;">
   <div class="container">
     <div class="login_inner loginpageout">
       <div class="row">
@@ -8,8 +8,8 @@
             <p>Log in to your account to discovery all great features.</p>
           </div>
           <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)"  class="login_form row">
-            <div class="col-lg-12 form-group">
-              <input matInput placeholder="Email address" class="w-100" type="email" required formControlName="email" />
+            <div class="col-12 form-group">
+              <input matInput placeholder="Email address" class="form-control" style="box-sizing: border-box;"  type="email" required formControlName="email" />
               <!-- Email Validation -->
               <mat-hint class="text-danger" *ngIf="loginForm.controls['email'].touched">
                                 <span *ngIf="loginForm.controls['email'].errors?.required">
@@ -20,8 +20,8 @@
                 </span>
               </mat-hint>
             </div>
-            <div class="col-lg-12 form-group">
-              <input matInput placeholder="Password" class="w-100" type="password" required formControlName="password" />
+            <div class="col-12 form-group">
+              <input matInput placeholder="Password" class="form-control" style="box-sizing: border-box;" type="password" required formControlName="password" />
               <!-- Password Validation -->
               <mat-hint class="text-danger" *ngIf="loginForm.controls['password'].touched">
                                 <span *ngIf="loginForm.controls['password'].errors?.required">

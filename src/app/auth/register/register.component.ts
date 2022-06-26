@@ -18,7 +18,9 @@ export class RegisterComponent implements OnInit {
     phone: new FormControl(null, Validators.required),
     confirmPassword: new FormControl(null, [Validators.required, Validators.minLength(6)]),
     message: new FormControl(null, Validators.required),
+    role:  new FormControl(null, Validators.required),
   }, { validators: this.checkPasswords });
+  roles = [{name: 'Host', value: 'client'}, {name: 'participant', value: 'customer'}];
   constructor(
     private toaster: ToastrService,
     private api: ApisService,
@@ -35,12 +37,12 @@ export class RegisterComponent implements OnInit {
   }
   register(form: any) {
     const Form_Data = new FormData();
-      Form_Data.append('name', form.name);
+      Form_Data.append('name', form.Name);
       Form_Data.append('user_name', form.userName);
       Form_Data.append('email', form.email);
       Form_Data.append('password', form.password);
       Form_Data.append('phone', form.phone);
-      Form_Data.append('role', 'client');
+      Form_Data.append('role', form.role);
     this.api.POST('api/v1/auth/register', Form_Data).subscribe(
       (res) => {
         this.toaster.success(
@@ -52,4 +54,5 @@ export class RegisterComponent implements OnInit {
       }
     );
   }
+
 }

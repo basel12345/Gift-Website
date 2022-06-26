@@ -2,28 +2,6 @@
 .main_slider_area #home_box_slider ul li .slider_text_box .secand_text {
   color: #222;
 }
-.subs_btn_1 {
-  background: #d91522;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #d91522;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-  border-radius: 0px;
-  padding: 0px 35px;
-  line-height: 48px;
-  transition: all 400ms linear 0s;
-  outline: none !important;
-  box-shadow: none !important;
-  cursor: pointer;
-}
-
-.subs_btn_1:hover {
-  background-color: transparent;
-  color: #d91522;
-}
 
 .selectpicker {
   @media (max-width: 767px) {
