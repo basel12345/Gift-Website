@@ -50,32 +50,9 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav mr-auto" *ngFor="let link of headerLinks">
                 <li class="nav-item active">
-                  <a class="nav-link" routerLink="/home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/about-us">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">How to use ? </a>
-                </li>
-                <li class="nav-item dropdown submenu">
-                  <a class="nav-link dropdown-toggle" href="events.php" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Events <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="public-events.php">Public events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="private-events.php">Private events</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/contact-us">Contact</a>
+                  <a class="nav-link" [routerLink]="link.url">{{link.name}}</a>
                 </li>
               </ul>
               <ul class="navbar-nav justify-content-end">
@@ -92,6 +69,6 @@
       </div>
     </header>
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <app-footer [footerLinks]="footerLinks"></app-footer>
   </div>
 </div>

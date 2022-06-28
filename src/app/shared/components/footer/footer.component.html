@@ -59,11 +59,8 @@
                         <div class="f_w_title">
                             <h3>Extras</h3>
                         </div>
-                        <ul>
-                            <li><a href="#">Add your Events</a></li>
-                            <li><a href="#">Gift your gift</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="start-card.php">Start card gifts</a></li>
+                        <ul *ngFor="let link of footerLinks">
+                            <li><a [href]="link.url">{{link.name}}</a></li>
                         </ul>
                     </aside>
                 </div>
