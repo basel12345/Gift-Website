@@ -15,8 +15,10 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.api.GET('api/v1/list/pages').subscribe((res: any) => {
       if (res.body.success === true) {
-        this.headerLinks = res.body.data.filter(res => res.position === "header");
-        this.footerLinks = res.body.data.filter(res => res.position === "footer");
+        this.headerLinks = res.body.data.filter(res => res.position === "header" || res.position === "both");
+        this.headerLinks.push({name: 'CONTACT US', url: 'contact-us'})
+        this.footerLinks = res.body.data.filter(res => res.position === "footer" || res.position === "both");
+        this.footerLinks.push({name: 'CONTACT US', url: 'contact-us'})
       };
     });
   }

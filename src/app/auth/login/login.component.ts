@@ -8,6 +8,7 @@ import { HandleErrorService } from 'src/app/shared/services/handle-error.service
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   // Constructor
@@ -44,7 +45,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('token', res.body.data.token);
           localStorage.setItem('user', JSON.stringify(res.body.data.user));
           setTimeout(() => {
-            this.router.navigateByUrl('/dashboard');
+            this.router.navigateByUrl('/home');
           }, 1000);
         }
       },

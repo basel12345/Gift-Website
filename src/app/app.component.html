@@ -1,74 +1,77 @@
-<div class="home_sidebar" style="min-height: 80vh; margin-bottom: 0">
-  <div class="home_box">
-    <!--================Menu Area =================-->
-    <header class="shop_header_area carousel_menu_area">
-      <div class="carousel_top_header black_top_header row m0">
-        <div class="container">
-          <div class="carousel_top_h_inner">
-            <div class="float-md-left">
-              <div class="top_header_left">
-                <div class="selector">
-                  <select class="language_drop" name="countries" id="countries" style="width: 300px">
-                    <option value="yt" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yt"
-                      data-title="English">
-                      English
-                    </option>
-                    <option value="yu" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yu"
-                      data-title="Bangladesh">
-                      Bangla
-                    </option>
-                    <option value="yt" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yt"
-                      data-title="English">
-                      English
-                    </option>
-                    <option value="yu" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yu"
-                      data-title="Bangladesh">
-                      Bangla
-                    </option>
-                  </select>
+<body>
+  <div class="home_sidebar" style="min-height: 80vh; margin-bottom: 0">
+    <div class="home_box">
+      <!--================Menu Area =================-->
+      <header class="shop_header_area carousel_menu_area">
+        <div class="carousel_top_header black_top_header row m0">
+          <div class="container">
+            <div class="carousel_top_h_inner">
+              <div class="float-md-left">
+                <div class="top_header_left">
+                  <div class="selector">
+                    <select class="language_drop" name="countries" id="countries" style="width: 300px">
+                      <option value="yt" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yt"
+                        data-title="English">
+                        English
+                      </option>
+                      <option value="yu" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yu"
+                        data-title="Bangladesh">
+                        Bangla
+                      </option>
+                      <option value="yt" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yt"
+                        data-title="English">
+                        English
+                      </option>
+                      <option value="yu" data-image="./assets/img/icon/flag-1.png" data-imagecss="flag yu"
+                        data-title="Bangladesh">
+                        Bangla
+                      </option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="float-md-right">
-              <ul class="account_list">
-                <li><a routerLink="/auth/register">My Account</a></li>
-                <!-- <li><a href="#">Wish List (0)</a></li> -->
-                <li><a href="#">Shopping Cart</a></li>
-                <li><a href="#">Checkout</a></li>
-              </ul>
+              <div class="float-md-right">
+                <ul class="account_list">
+                  <li><a routerLink="/auth/register">My Account</a></li>
+                  <!-- <li><a href="#">Wish List (0)</a></li> -->
+                  <li><a href="#">Shopping Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="carousel_menu_inner">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" routerLink="/home"><img src="./assets/img/logo-1.png" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto" *ngFor="let link of headerLinks">
-                <li class="nav-item active">
-                  <a class="nav-link" [routerLink]="link.url">{{link.name}}</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav justify-content-end">
-                <li class="user_icon">
-                  <a routerLink="/auth"><i class="icon-user icons"></i></a>
-                </li>
-                <li class="cart_cart">
-                  <a href="#"><i class="icon-handbag icons"></i></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        <div class="carousel_menu_inner">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" routerLink="/home"><img src="./assets/img/logo-1.png" alt="" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" *ngFor="let link of headerLinks">
+                  <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="link.url">{{link.name}}</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                  <li class="user_icon">
+                    <a routerLink="/auth"><i class="icon-user icons"></i></a>
+                  </li>
+                  <li class="cart_cart">
+                    <a href="#"><i class="icon-handbag icons"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
-    <router-outlet></router-outlet>
-    <app-footer [footerLinks]="footerLinks"></app-footer>
+      </header>
+      <router-outlet></router-outlet>
+      <app-footer [footerLinks]="footerLinks"></app-footer>
+    </div>
   </div>
-</div>
+  
+</body>

@@ -33,11 +33,8 @@
                         <div class="f_w_title">
                             <h3>Information</h3>
                         </div>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Completed events</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Help Center</a></li>
+                        <ul *ngFor="let link of footerLinks">
+                            <li><a [href]="link.url">{{link.name}}</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -51,16 +48,6 @@
                             <li><a href="#">Ordr History</a></li>
                             <li><a href="#">Newsletter</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <aside class="f_widget link_widget f_extra_widget">
-                        <div class="f_w_title">
-                            <h3>Extras</h3>
-                        </div>
-                        <ul *ngFor="let link of footerLinks">
-                            <li><a [href]="link.url">{{link.name}}</a></li>
                         </ul>
                     </aside>
                 </div>
